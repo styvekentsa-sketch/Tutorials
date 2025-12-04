@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&display=swap');
+
+*{
+    gap: 20px;
+
+}
+
+body{
+      font-family: 'arial', sans-serif;
+}
+.main{
+    justify-content: center;
+    text-align: center;
+    /* display: grid 3 columns 3 rows; */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 20px 20px;
+    display: grid;
+    position: relative;
+    /* border-spacing: 100px; */
+}
+.div1{
+    background-color: aqua;
+    width: 250px;
+    height: 200px;
+     border-radius: 20px;
+    border: 1px solid black;
+}
+.div2{
+    background-color: pink;
+    width: 250px;
+    height: 200px;
+     border-radius: 20px;
+      border: 1px solid black;
+}
+.div3{
+    background-color: skyblue;
+    width: 250px;
+    height: 200px;
+     border-radius: 20px;
+      border: 1px solid black;
+}
+.div4{
+    background-color: yellow;
+    width: 250px;
+    height: 200px;
+     border-radius: 20px;
+      border: 1px solid black;
+}
+.div5{
+    background-color: blueviolet;
+    width: 250px;
+    height: 200px;
+     border-radius: 20px;
+      border: 1px solid black;
+}
+.div6{
+    background-color: lightyellow;
+    width: 250px;
+    height: 200px;
+     border-radius: 20px;
+      border: 1px solid black;
+}
+.div7{
+    background-color: chocolate;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+     border: 1px solid black;
+}
+.div8{
+    background-color: lime;
+    width: 250px;
+    height: 200px;
+     border-radius: 20px;
+      border: 1px solid black;
+    
+}
+.div9{
+    background-color: rgb(40, 143, 207);
+    width: 250px;
+    height: 200px;
+     border-radius: 20px;
+ border: 1px solid black;
+}

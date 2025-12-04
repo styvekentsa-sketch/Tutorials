@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html >
+<body>
+    <div class="swirl"></div>
+</body>
+</html>
+
+<style>
+
+    body {
+        background-color: black;
+        color: white;
+        min-height: 100vh;
+        margin: 0;
+        display:grid;
+        place-items: center;
+
+    }
+    .swirl {
+        --size: min(5vmin, 24px);
+       position : relative;
+    }
+    i {
+        --x:calc((sibling-index() - 1),20)-9.5);
+        --y:calc(9.5-round (down,   (sibling-index()-1)/20));
+        --n:calc((sibling-index() - 1)/(sibling-count()-1))
+        --hue:calc(mod(sin(var(--n)*10)*360, 360));
+    }
+</style> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .navbar{
+             text-align: right;
+             background-color: rgb(13, 10, 37);
+             /* z-index: 1; */
+            padding-right: 90px;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+        }
+         .navbar li{
+             list-style: none;
+             display: inline-block;
+             padding: 20px;
+        }
+      .navbar li a{
+            text-decoration: none; 
+            color: rgb(255, 255, 255); 
+                     
+        }
+           .navbar a:hover{
+            color: aqua;
+            /* transition: 0.2s; */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li style="float: left;"><b>VTIB.</b></li>
+            <li><a style="font-size: smaller; " href="index.html">Home</a></li>
+            <li><a style="font-size: smaller; " href="#">About</a></li>
+            <li><a style="font-size: smaller; " href="registration.html">Registration</a></li>
+            <li><a style="font-size: smaller; " href="login.html">Log-In</a></li>
+            <li><a   href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

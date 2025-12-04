@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+   
+    <style>
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.content-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f0f8ff; 
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    background-color: #e6f2ff; 
+}
+#sidebar {
+    background-color: #ffffe0; 
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 20px;
+    float: right; 
+    width: 250px;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Webpage layout</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="introduction">Intro</a></li>
+            <li><a href="courses">Courses</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div id="introduction" class="content-box">
+            <h2>Introduction</h2>
+            <p>Welcome to my web page layout! This section provides a brief intro. <br> 
+                <br>
+                 -This is just a trailler </p>
+        </div>
+
+        <div id="courses" class="content-box">
+            <h2>Courses Offered</h2>
+            <p>We offer courses in HTML, CSS, and JavaScript. Learn something new today!</p>
+        </div>
+
+        <div id="contact" class="content-box">
+            <h2>Contact Info</h2>
+            <p>You can reach us via email or phone. As shown below.<br>
+                <br>
+                - styvekentsa@gmail.Com<br>
+                - +237 677794269
+
+            </p>
+        </div>
+
+        <p>The code for a main heading is written like this: &lt;h1&gt;VTIB&lt;/h1&gt;</p>
+    </section>
+
+    <aside id="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>Copyright &copy; 2025. 😎🎶</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!-- <!DOCTYPE html>
+<html >
+<head>
+<head/>
+<body>
+    <div class="leader"> 
+        <span ></span>
+        <span ></span>
+        <span ></span> 
+        <span ></span>
+    </div>
+    
+</body>
+</html>
+<style> 
+    body {
+        background-color: black;
+        margin: 0px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .leader, .leader  span {
+        width: 10em;
+        height: 10em;
+        border: 0.25em solid white;
+        font-size: 10px;
+        border-radius: 1em;
+        position: absolute;
+        mix-blend-mode: screen;
+    }
+    .leader {
+        background-color: gold;
+        animation: rotating 2s linear infinite;
+    }
+    @keyframes rotating {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+    .leader span {
+        animation: de-rotating 4s ;
+        linear infinite;
+    }
+    @keyframes de-rotating {
+        from, to {
+            transform: rotate(0deg);
+            scale(0.5);
+        }
+        50% {
+            transform: rotate(-180deg);
+            scale(1.2);
+        }
+        .leader span:nth-child(1) {
+            top: 5em;
+            left: 5em;
+            background-color: red;        
+    }
+    .leader span:nth-child(2) {
+            top: -5em;
+            left: 5em;
+            background-color: blue;        
+    }
+    .leader span:nth-child(3) {
+            top: 5em;
+            left: -5em;
+            background-color: green;        
+    }
+    .leader span:nth-child(4) {
+            top: -5em;
+            left: -5em;
+            background-color: purple;        
+    }
+    </style>
+
+ -->
+
+
+
+
+<style>
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+  grid-template-rows: repeat(3, 1fr); /* 3 lignes égales */
+  gap: 10px; /* espace entre les cellules */
+}
+.item {
+  background-color: #f0f0f0; /* couleur de fond */
+  padding: 20px; /* espace intérieur */
+  border: 1px solid #ddd; /* bordure */
+}
+</style>
+
+<div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>
+  <div class="item">7</div>
+  <div class="item">8</div>
+  <div class="item">9</div>
+</div>
+
+
+
+
+
+
+
+/* 
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
+
+
+
+
+
