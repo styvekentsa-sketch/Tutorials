@@ -18,24 +18,26 @@ body {
     position: relative;
     overflow: hidden;
 }
-body::before {
+body::before, body::after {
     content: "";
     position: absolute;
-    top: -50%;
-    left: -50%;
+    /* top: -50%; */
+    /* left: -50%; */
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 70%);
-    animation: rotate 20s linear infinite;
+    /* background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 70%); */
+    /* animation: rotate 20s linear infinite; */
     z-index: 0;
     opacity: 0.2;
     filter: blur(120px);
     border-radius: 50%;
+    /* top: 10%; */
+    /* left: 10%; */
+}
+body::before{
+    background: #00ffc3;
     top: 10%;
     left: 10%;
-}
-/* body::before, body{ */
-    /* background: #00ffc3; */
        /* content: ";";
        position: absolute;
        width: 400px;
@@ -45,7 +47,7 @@ body::before {
          opacity:0.2;
          z-index: 0; */
 
-/* } */
+}
 body::after{
     background: #ff00f7;
     bottom: 10%;
@@ -59,16 +61,18 @@ body::after{
 .card::after{
     content: "";
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 70%);
-    animation: rotate 20s linear infinite;
-    z-index: -1;
-    opacity: 0.2;
-    filter: blur(120px);
-    border-radius: 50%;
+    inset: 0;
+    /* top: -50%; */
+    /* left: -50%; */
+    /* width: 200%; */
+    /* height: 200%; */
+    /* background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 70%); */
+    /* animation: rotate 20s linear infinite; */
+    z-index: 1;
+    opacity: 0.05;
+    /* filter: blur(120px); */
+    /* border-radius: 50%; */
+    pointer-events:none;
 }
 .card {
     position: relative;
@@ -79,17 +83,46 @@ body::after{
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);  
     background:blur(14px)
-    overflow :hidden
-    z-index: 1;
+
+    /* oveflow: hidden; */
     transform-style:preserve-3d;
-    tansition:transform:  0.1s ease-out;
+    /* tansition:transform:  0.1s ease-out; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+}
+.card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:20px;
+    padding:2px;
+    background:linear-gradient(var(--angle,135deg),rgba(255,255,255,0.1), rgba(255,255,255,0));
+    -webkit-mask:
+    linear-gradient(#fff 0 0)content-box,
+    linear-gradient(#fff 0 0);
+    wibkite-mask-composite: xor;
+    mask-composite:exclude;
+    pointer-events: none;
+    z-index:2;
+    transition:background 0.2s ease;
 }
 
 .glow {
     position:absolute;
     top: var(-y,50%);
     left:var(-x,50%);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle at center,rgba(0,255,200,0.2),tranparent 80%);
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    opacity:0;
+    transition: top 0.1s,left 0.2s, opacity 0.3s ease;
+    z-index: 0;
+}
+.card:hover .glow{
+    opacity:1;
+
 }
 
 @keyframes rotate {
